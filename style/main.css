@@ -1,0 +1,70 @@
+.row {
+  display: flex;
+}
+  
+.column {
+  width: 30%;
+}
+
+.input_csv{
+  width: 100%;
+  height: 10em;
+  resize: vertical;
+}
+
+.rubric_title {
+  vertical-align: top;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+}
+
+.border{
+  border-collapse:collapse;
+  border:1px solid #000000;
+}
+
+.main_table{
+  width: 100%;
+  border-collapse:collapse;
+}
+
+.rubric_points{
+  width: 7em;
+  text-align: right;
+  vertical-align: top;
+}
+
+.rubric_desc{
+  width: 100%;
+  word-wrap:break-word;
+}
+
+.rubric_item{
+  table-layout: fixed;
+}
+
+.score_input{
+  width: 3em;
+}
+
+.comment_input{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.center{
+  text-align: center;
+  vertical-align: top;
+}
+
+.max_size{
+  width: 100%;
+  height: 100%;
+}
+
+.comment_td {
+  height: 1;
+}

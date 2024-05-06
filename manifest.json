@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "NTU Cool autograde",
+    "description": "",
+    "version": "1.0",
+    "action": {
+      "default_popup": "main.html"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "https://cool.ntu.edu.tw/courses/*/gradebook/speed_grader?assignment_id=*"
+        ]
+      }
+    ],
+    "permissions": [
+      "activeTab"
+    ]
+}

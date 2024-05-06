@@ -1,0 +1,41 @@
+<html>
+  <link rel="stylesheet" href="style/main.css">
+  <body style="width:750px; height:580px">
+    <h1 id="status"></h1>
+    <div id="main">
+      <div class="row">
+        <div class="column" id="info">
+            <p>Course ID: <span id="course_id"></span></p>
+            <p>Assignment ID: <span id="assignment_id"></span></p>
+            <p>Student ID: <span id="student_id"></span></p>
+        </div>
+        <div class="column" id="settings">
+          <p>
+            <input type="checkbox" id="hide_description" name="hide_description" value="hide_description">
+            <label for="hide_description">Hide Description</label>
+          </p>
+          <p>
+            <input type="checkbox" id="no_update_score" name="no_update_score" value="no_update_score">
+            <label for="no_update_score">Don't update total score</label>
+          </p>
+          <button id="update">Reload Rubric</button>
+        </div>
+      </div>
+      <h3>Import from CSV:</h3>
+      <details>
+        <summary>Format</summary>
+        CSV format with columns: <tt>user_id</tt>, <tt>{rubric_title}</tt>, and <tt>{rubric_title}_comment</tt>
+      </details>
+      <p></p>
+      <div id="input">
+        <textarea class="input_csv" type="text" id="input_csv"></textarea>
+        <p><button id="csv_submit">Submit CSV</button></p>
+      </div>
+      <h3 class="rubric" id="rubric_header">Manual Grading</h1>
+      <div class="rubric" id="rubric_div">
+      </div>
+    </div>
+  </body>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/papaparse.min.js"></script>
+</html>
